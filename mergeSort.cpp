@@ -1,3 +1,9 @@
+/*
+  Nathaniel Larsen - mergesort implementation - Sept. 2020
+  Started this at the begining of Data Structures & Algorithms..
+  Decided to try and come around and code merge in-place
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <ctime>

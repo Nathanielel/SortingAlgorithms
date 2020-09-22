@@ -1,3 +1,9 @@
+/*
+  Nathaniel Larsen - quicksort implementation - Sept 2020
+  Hoare's partitioning method. 
+  Transcoded from the C++ version I wrote back in March 
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #define MEDIAN_MIN 24

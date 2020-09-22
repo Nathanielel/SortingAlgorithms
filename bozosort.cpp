@@ -1,3 +1,8 @@
+/*
+    Nathaniel Larsen - bozosort implementation - Jan. 2020
+    Just for fun. Works, but sometimes has to give up.
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <vector>
