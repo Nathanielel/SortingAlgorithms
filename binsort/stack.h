@@ -1,5 +1,8 @@
+#ifndef STACK_H
+#define STACK_H
+
 #include <stdlib.h>
-#define StackT int
+#define StackT long int
 
 typedef struct StackObj* Stack;
 // Constructor / Destructor
@@ -14,3 +17,5 @@ StackT at(Stack S, size_t n);
 void push_back(Stack S, StackT n);
 StackT pop_back(Stack S);
 void clear(Stack S);
+
+#endif

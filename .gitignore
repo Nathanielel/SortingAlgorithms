@@ -44,7 +44,7 @@
 
 # OS generated files #
 ######################
-/.vscode/*
+.vscode
 .DS_Store
 .DS_Store?
 ._*
