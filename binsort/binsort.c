@@ -1,21 +1,21 @@
 /**
  *  Nathaniel Larsen - radix/bucket sort implementation - Sept. 2020
- *  Translation from Spring 2020 C++ project.
+ *  Translation from Spring 2020 C++ project. sorts long ints in O(4n) time
  */
 #include <stdio.h>
 
 #include "stack.h"
 #define StackT long int
-#define BASE 256  // number of possible values
-#define BITS 8    // number of bits per "digit"
-#define BYTES 8   // size of type being sorted
+#define BASE 65536  // number of possible values
+#define BITS 16    // number of bits per "digit"
+#define BYTES 4   // size of type being sorted
 
 void radixBucketSort(StackT* nums, size_t len) {
   Stack working[BASE];  // make an array of BASE Stacks to serve as bins
   for (size_t i = 0; i < BASE; ++i){
     working[i] = newStack();
   }
-  for (size_t dig = 1; dig < BYTES; ++dig) {
+  for (size_t dig = 0; dig < BYTES; ++dig) {
     for (size_t item = 0; item < len; ++item) {
       push_back(working[(nums[item] >> (BITS * dig) & (BASE-1))], nums[item]);
     }
